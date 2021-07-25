@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* Example background */
+    background-image: url();
+    background-repeat: no-repeat;
+
+}
+
+.base {
+    position: fixed;
+    bottom: 0;
+    height: 230px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    padding: 1px;
+
+    /* Remove highlight */
+    /* https://stackoverflow.com/a/4407335 */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.base .inner {
+    display: table;
+    margin: 0 auto;
+}
+
+.key {
+    display: inline-block;
+    font-weight: bold;
+    margin: 3px;
+
+    /* Centre the text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+
+    /* For round button */
+    height: 45px;
+    width: 45px;
+
+    /* Button color */
+    background-color: rgba(253,248,240,255);
+
+    /* Border */
+    border-radius: 50%;
+    border: #ffeac1 2px solid;
+
+    /* Note color */
+    color: rgba(115,183,164,255);
+}
+
+/* When press */
+.key.active {
+    background-color:rgba(0,0,0);
+}
