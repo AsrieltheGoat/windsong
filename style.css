@@ -3,16 +3,11 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00a2ed;
-
-    /* Remove highlight */
-    /* https://stackoverflow.com/a/4407335 */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    background-color: black;
+    
+    /* Example background */
+    /* background-image: url(); */
+    /*  background-repeat: no-repeat; */
 
 }
 
@@ -25,6 +20,14 @@ body {
     color: black;
     padding: 1px;
 
+    /* Remove highlight */
+    /* https://stackoverflow.com/a/4407335 */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .base .inner {
@@ -35,7 +38,7 @@ body {
 .key {
     display: inline-block;
     font-weight: bold;
-    margin: 0;
+    margin: 4px;
 
     /* Centre the text */
     text-align: center;
@@ -54,18 +57,12 @@ body {
     border: #ffeac1 2px solid;
 
     /* Note color */
-    color: #73b7a4;
-    opacity: 1;
-
-    /* Horizontal margin */
-    /* I too stupid */
-    margin-left: 30px;
+    color: rgb(115,183,164,255);
 }
 
 /* When press */
 .key.active {
-    background-color: #73b7a4;
-    border: #69b9a3 2px solid;
-    color: white;
-    transform: scale(0.91);
+    background-color: rgb(190,190,190,5);
+    outline: none;
+
 }

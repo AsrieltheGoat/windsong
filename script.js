@@ -1,15 +1,14 @@
 // Assign letter
 const KEYS_TOP = ['q', 'w', 'e', 'r', 't', 'y', 'u'];
-const KEYS_MIDDLE = ['a', 's', 'd', 'f', 'g', 'h'];
+const KEYS_MIDDLE = ['a', 's', 'd', 'f', 'g', 'h', 'j'];
 const KEYS_BOTTOM = ['z', 'x', 'c', 'v', 'b', 'n', 'm'];
 
 const keys = document.querySelectorAll('.key')
-// class moment.
 const topKeys = document.querySelectorAll('.key.top');
 const middleKeys = document.querySelectorAll('.key.middle');
 const bottomKeys = document.querySelectorAll('.key.bottom');
 
-// Allow to press the notes
+// Allow to click the notes
 keys.forEach(key => {
     key.addEventListener('click', () => playNote(key));
 })
